@@ -2,16 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dirt & Daisy helps you discover what to plant—and when—based on your location. Grow flowers, veggies, or herbs with ease!">
+
     <title>Dirt & Daisy</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T39QYRPQPQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T39QYRPQPQ');
+</script>
 </head>
 <body>
-
+   <!-- Navigation Bar -->
     <nav>
         <div class="logo">
+            <!-- Site logo image -->
             <img src="images/logo.png" alt="Dirt & Daisy Logo">
         </div>
-        <ul>
+        <ul style="margin-top: 10px;">
+               <!-- Navigation links -->
             <li><a href="index.html">HOME</a></li>
             <li><a href="zones.html">ZONES</a></li>
             <li><a href="tips.html">TIPS</a></li>
@@ -20,27 +35,36 @@
     </nav>
 
     <header class="hero">
+           <!-- Hero Section with Main Title -->
         <div class="hero1">
             <h1>Dirt & Daisy</h1>
         </div>
     </header>
-
-    <section class="garden-info">
+     <!-- Intro Section About Starting a Garden with text and image side by side -->
+    <section class="garden-info" style="gap: 30px;"> 
         <div class="text">
-            <h2>START YOUR GARDEN TODAY</h2>
+            <h2 style="font-size: 36px; text-align: left;">START YOUR GARDEN TODAY</h2>
             <p>Starting a garden at home is easier than you think! We’re here to help you discover what to plant—and when—based on your climate and location. Gardening isn’t just about the produce—it’s about connecting with nature, soaking up sunshine, and getting your hands dirty. No matter your skill level, you can grow something beautiful. Whether it’s flowers, veggies, or herbs, your garden is waiting to become your new favorite place.</p>
         </div>
-        <div class="image">
+        <div class="image" style="flex-shrink: 0;">
             <img src="images/hero.jpeg" alt="Gardening Image" width="300px">
         </div>
     </section>
-
-    <section class="imagez">
-        <img src="images/image1.jpeg" alt="Fresh vegetables in a basket" width="100px">
-        <img src="images/image2.jpeg" alt="Tomato plant growing" width="100px">
-        <img src="images/image3.jpeg" alt="Harvested vegetables" width="100px">
+    <section class="personal-story">
+        <div class="text">
+            <h2>My Gardening Journey</h2>
+            <p>For a long time, I put off starting a garden because I was convinced I wouldn’t be able to grow anything. I thought I didn’t have the right skills, the right tools, or even the right yard. But the summer I finally gave it a try, I ended up with more veggies than I knew what to do with! I was giving them away to friends and family, and even pickling the extras. Gardening quickly became one of the most rewarding things I’ve ever done — and it can be for you too.</p>
+        </div>
     </section>
-
+    
+<!-- Small Gallery Section with Garden Images -->
+    <section class="imagez">
+        <img src="images/image1.jpeg" alt="Fresh vegetables in a basket" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;">
+        <img src="images/image2.jpeg" alt="Tomato plant growing" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;">
+        <img src="images/image3.jpeg" alt="Harvested vegetables" style="width: 250px; height: 250px; object-fit: cover; border-radius: 10px;">
+    </section>
+    
+  <!-- Footer Section -->
     <footer>
         <div class="footer">
             <img src="images/logosmall.png" alt="Dirt & Daisy Icon" width="50px">
