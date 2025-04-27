@@ -74,6 +74,18 @@ nav ul li a:hover {
     width: 400px;
     border-radius: 10px;
 }
+/* my story section*/
+
+.personal-story {
+    display: flex;
+    justify-content: center; /* centers the container horizontally */
+    padding: 40px 20px;
+}
+
+.story-container {
+    max-width: 600px; /* limit how wide it can get */
+    text-align: center; /* center the heading and paragraph */
+}
 
 /* Image Grid */
 .imagez {
@@ -189,7 +201,7 @@ button:hover {
 .zone-buttons {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* NO wrapping onto a second line */
     justify-content: center;
     margin-bottom: 20px;
 }
