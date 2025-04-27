@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dirt & Daisy helps you discover what to plant—and when—based on your location. Grow flowers, veggies, or herbs with ease!">
+
     <title>Dirt & Daisy | Zones</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!--NAV section -->
     <nav>
         <div class="logo">
             <img src="images/logo.png" alt="Dirt & Daisy Logo">
@@ -23,6 +27,7 @@
         </div>
     </header>
     <section class="zone-info">
+         <!-- Buttons for Different U.S. Regions -->
         <div class="zone-buttons">
             <button>North Central</button>
             <button>North East</button>
@@ -31,14 +36,27 @@
             <button>South East</button>
             <button>South West</button>
         </div>
+        <!-- Content with Map and Description -->
         <div class="zone-content">
-            <img src="images/map.png" alt="USDA Gardening Zones Map" width="300px">
+            <img src="images/map.png" alt="USDA Gardening Zones Map" width="500px">
             <p>
                 In the U.S., gardening success starts with understanding your hardiness zone—a system that divides the country into regions based on average minimum temperatures. 
                 By knowing your zone, you can plan which plants will thrive best in your area!
             </p>
         </div>
     </section>
+    <section class="zone-importance">
+        <h2>Why Gardening Zones Matter</h2>
+        <p>
+            Understanding your gardening zone isn't just about planting, it’s about ensuring long-term success in your garden! <br>
+            By aligning your plant choices with your zone's climate, you can avoid disappointment and wasted time. <br>
+            <strong>Timing is everything.</strong> Zones help you know when to plant and when to expect frost, which is crucial for certain crops. <br>
+            Imagine spending weeks nurturing your plants, only for a surprise frost to ruin all your hard work! <br>
+            <strong>Better growth, less guesswork.</strong> With the right zone knowledge, you can select plants that will not only survive but thrive, creating a flourishing garden that lasts. <br>
+            Understanding these zones means you’re gardening smarter, not harder!
+        </p>
+    </section>
+    
     <footer>
         <div class="footer">
             <img src="images/logosmall.png" alt="Dirt & Daisy Icon" width="50px">
@@ -48,4 +66,17 @@
     </footer>
 
 </body>
+
+<script>
+    // Java script so that when zone buttons are clicked the user is notified
+    const zoneButtons = document.querySelectorAll('.zone-buttons button');
+    
+    zoneButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Change background color based on the zone clicked
+            document.body.style.backgroundColor = "#F5F2E9"; // Example background change
+            alert("You selected the " + button.textContent + " zone!");
+        });
+    });
+</script>
 </html>
